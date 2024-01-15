@@ -123,6 +123,9 @@ a{
 .update input{
     margin-top: 0.8%;
 }
+.delete-page{
+    width:30%;
+}
 @media (max-width:1200px)
 {
     .form{
@@ -136,6 +139,9 @@ a{
     }
     .pic{
         width: 50%;
+    }
+    .delete-page{
+        width:40%;
     }
 }
 @media (max-width:730px)
@@ -174,6 +180,9 @@ a{
     .signinform{
         flex-direction: column;
         flex-flow: column-reverse;
+    }
+    .delete-page{
+        width:80%;
     }
    
 }
