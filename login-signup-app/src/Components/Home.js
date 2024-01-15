@@ -7,7 +7,7 @@ function Home() {
   const [user, setUser] = useState([])
   const navigate=useNavigate();
   useEffect(() => {
-    fetch("http://localhost:5000")
+    fetch("https://user-management-backend-app.onrender.com")
       .then(response => response.json())
       .then(data => setUser(data))
       .catch(error => console.log(error));
@@ -15,13 +15,13 @@ function Home() {
 
   const handleDelete = async (id) => {
     try{
-      fetch(`http://localhost:5000/deleteUser/${id}`, {
+      fetch(`https://user-management-backend-app.onrender.com/deleteUser/${id}`, {
       method: 'DELETE',
       }).then((res)=>res.json())
       .then(async(res)=>{
         if(res.status===201)
         {
-          const updated=await fetch("http://localhost:5000");
+          const updated=await fetch("https://user-management-backend-app.onrender.com");
           const result=await updated.json();
           setUser(result);
           navigate("/deleteUser");
@@ -47,32 +47,7 @@ function Home() {
           <Link to="/addUser" className='btn btn-primary me-4'>Add User</Link>
         </div>
       </div>
-      <div className='data container  '>
-        {/*<table className='table table-striped table-warning'>
-          <thead>
-            <tr>
-              <th>User Name</th>
-              <th>Email</th>
-              <th>Contact Details</th>
-              <th colSpan={2}>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              user.map((em) => {
-                //console.log(emp)
-                return <tr>
-                  <td>{em.name}</td>
-                  <td>{em.email}</td>
-                  <td>{em.contact}</td>
-                  <td><Link to={`/updateUser/${em._id}`} className='btn btn-success'>Update</Link></td>
-                  <td><button onClick={(e) => handleDelete(em._id)} className='btn btn-warning'>Delete</button></td>
-                </tr>
-              })
-
-            }
-          </tbody>
-          </table>*/}
+      <div className='data container'>
           {user.map((us)=>{
             return <div className="card" style={{ width: "18rem" }} key={us._id}>
             <div className="card-body">
