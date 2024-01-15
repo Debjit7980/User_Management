@@ -46,6 +46,9 @@ function Home() {
         <div className="text-right">
           <Link to="/addUser" className='btn btn-primary me-4'>Add User</Link>
         </div>
+        <div className="text-middle">
+          <Link to="/"><h3>User Management</h3></Link>
+        </div>
       </div>
       <div className='data container'>
           {user.map((us)=>{
