@@ -1,6 +1,6 @@
 # User Management App
 
-This repository contains the source code for a User Management application built with React, Node.js, Express.js, and MongoDB. The application includes features like adding a new user, updating a user, and deleting a user.
+This repository contains the source code for a User Management application built with ReactJs, Node.js, Express.js, and MongoDB. The application includes features like adding a new user, updating a user, and deleting a user.
 
 ## Project Structure
 
