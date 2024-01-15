@@ -43,11 +43,11 @@ function Home() {
   return (
     <div>
       <div className='navbar  p-3 text-center mx-auto  bg-dark text-light'>
+        <div className='p-2'>
+          <Link to="/"><h3>User Management Site</h3></Link>
+        </div>
         <div className="text-right">
           <Link to="/addUser" className='btn btn-primary me-4'>Add User</Link>
-        </div>
-        <div className="text-middle">
-          <Link to="/"><h3>User Management</h3></Link>
         </div>
       </div>
       <div className='data container'>
