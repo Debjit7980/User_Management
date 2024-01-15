@@ -10,7 +10,7 @@ function AddUser() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const data = await fetch("http://localhost:5000/addUser", {
+            const data = await fetch("https://user-management-backend-app.onrender.com/addUser", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
