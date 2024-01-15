@@ -10,7 +10,7 @@ function UpdateUser() {
   const navigate=useNavigate()
 
   useEffect(() => {
-    fetch(`http://localhost:5000/getUser/${id}`)
+    fetch(`https://user-management-backend-app.onrender.com/getUser/${id}`)
       .then(response => response.json())
       .then(data => {
         setName(data.name);
@@ -25,7 +25,7 @@ function UpdateUser() {
     e.preventDefault();
   
     try {
-      const data=await fetch(`http://localhost:5000/updateUser/${id}`, {
+      const data=await fetch(`https://user-management-backend-app.onrender.com/updateUser/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
