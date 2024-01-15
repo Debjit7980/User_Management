@@ -24,7 +24,7 @@ client.connect().then(() => {
     console.log("Connected to MongoDB");
 }).catch(err => console.error(err));
 
-const allowedOrigins=['https://user-management-app.onrender.com','http://localhost:3000'];
+const allowedOrigins=['https://user-management-app-okfe.onrender.com','http://localhost:3000'];
 app.use(cors({
     origin: allowedOrigins ,  // Replace with your client's actual origin
     credentials: true,
