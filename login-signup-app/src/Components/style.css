@@ -71,6 +71,13 @@ a{
     text-align: left;
     justify-content: space-between;
 }
+.add-user a:hover{
+    background-color: transparent;
+    border:2px solid rgb(27, 99, 194);
+    color:white;
+    box-shadow: 0 0 15px rgb(28, 120, 240);
+    transition: 0.4s;
+}
 #email{
     padding:7px 0;
 }
