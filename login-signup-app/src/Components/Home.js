@@ -46,7 +46,7 @@ function Home() {
         <div className='p-2'>
           <Link to="/"><h3>User Management Site</h3></Link>
         </div>
-        <div className="text-right">
+        <div className="add-user">
           <Link to="/addUser" className='btn btn-primary me-4'>Add User</Link>
         </div>
       </div>
